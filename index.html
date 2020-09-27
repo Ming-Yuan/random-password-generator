@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Password Generator</title>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+     <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">Random Password Generator</h3>
+      </div>
+
+      <div class="jumbotron">
+        <p class="lead">Generate a secure & random password.</p>            
+          <label class="checkbox-inline">
+            <input type="checkbox" id="numbers" checked="checked">Numbers
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="uppercase" checked="checked">Uppercase
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="lowercase" checked="checked">Lowercase
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="symbols">Symbols
+          </label>
+</br>
+</br>
+          <label class="checkbox-inline">
+          <input type="text" class="form-control" id="length" value="16" >Password Length <=38 (default:16)
+          </label>
+
+
+</br>
+</br>
+      <div class="alert alert-info" role="alert"><p id="pw"> >>> print (password)</p></div>
+        <button type="button" class="btn btn-primary" value="OK" id="confirm">Generate</button>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2016 <a href="https://github.com/Ming-Yuan" target="_blank">Ming-Yuan</a>.
+      </footer>
+    </div>
+
+    <script src="core.js"></script>
+  </body>
+</html>
